@@ -23,10 +23,13 @@ function incrementNumber(eventDetails) {
 let hoverThisIdiot = document.getElementById(`hoverThis`);
 hoverThisIdiot.addEventListener(`mousemove`, incrementNumber);
 
+// this funciton is a troll funciton that tells the user it will change the background color to white
+// spoiler alert: it doesn't do that! It changes it to poop
 function reactToKeyPress(eventDetails) {
     console.log(eventDetails);
-    document.body.style.background = "skyblue";
-    document.getElementById(`lolNo`).innerText = `lol jk, it's now blue`
+    document.body.style.background = "rgb(96, 68, 7)";
+    document.getElementById(`lolNo`).innerText = `lol jk, it's now it's poop`
 }
 
+// this function happen when you press the Spacebar [technically true]
 document.body.addEventListener("keydown", reactToKeyPress);
