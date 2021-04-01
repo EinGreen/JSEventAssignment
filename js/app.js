@@ -23,3 +23,10 @@ function incrementNumber(eventDetails) {
 let hoverThisIdiot = document.getElementById(`hoverThis`);
 hoverThisIdiot.addEventListener(`mousemove`, incrementNumber);
 
+function reactToKeyPress(eventDetails) {
+    console.log(eventDetails);
+    document.body.style.background = "skyblue";
+    document.getElementById(`lolNo`).innerText = `lol jk, it's now blue`
+}
+
+document.body.addEventListener("keydown", reactToKeyPress);
